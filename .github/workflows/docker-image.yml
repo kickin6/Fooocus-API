@@ -31,4 +31,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}/my-app:latest
+        tags: ghcr.io/fooocus-api/main:latest
