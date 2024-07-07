@@ -22,7 +22,7 @@ from fooocusapi.utils.logger import logger
 
 
 output_dir = os.path.abspath(os.path.join(
-    os.path.dirname(__file__), '../..', 'outputs', 'files'))
+    os.path.dirname(__file__), '../..', 'outputs'))
 os.makedirs(output_dir, exist_ok=True)
 
 STATIC_SERVER_BASE = 'http://127.0.0.1:8888/files/'
@@ -43,10 +43,7 @@ def save_output_file(
     Returns:
         str of file name
     """
-    current_time = datetime.datetime.now()
-    date_string = current_time.strftime("%Y-%m-%d")
-
-    filename = os.path.join(date_string, image_name + '.' + extension)
+    filename = os.path.join(image_name + '.' + extension)
     file_path = os.path.join(output_dir, filename)
 
     if extension not in ['png', 'jpg', 'webp']:

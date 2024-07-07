@@ -165,7 +165,7 @@ def process_generate(async_task: QueueTask):
             if async_task.req_param.save_name == '':
                 image_name = f"{async_task.job_id}-{str(index)}"
             else:
-                image_name = f"{async_task.req_param.save_name}-{str(index)}"
+                image_name = f"{async_task.req_param.save_name}/{async_task.job_id}-{str(index)}"
             if len(tasks) == 0:
                 img_seed = -1
                 img_meta = {}
