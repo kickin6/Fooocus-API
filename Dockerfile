@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
 
-ENV TZ=Asia/Shanghai
+ENV TZ=America/Los_Angeles
 
 WORKDIR /app
 
