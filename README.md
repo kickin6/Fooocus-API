@@ -23,6 +23,12 @@ If this is the first time to use it, it is recommended to use a rewritten new pr
 
 A migration guide is provided [here](./docs/migrate.md).
 
+# :warning: Code modified warning :warning:
+
+This is a modified version of the original code base. 
+
+It sets the save_name value as the top-level outputs directory, removes the additional date directory and the filename is the job_id-{sequence no.} This allows grouping images by key rather than by date.
+
 # :warning: Compatibility warning :warning:
 
 When upgrading from version 3.x to version 4.0, please read the following incompatibility notes:
