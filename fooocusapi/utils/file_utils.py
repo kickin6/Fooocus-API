@@ -59,7 +59,7 @@ def save_output_file(
         meta.add_text("parameters", json.dumps(image_meta))
         meta.add_text("fooocus_scheme", image_meta['metadata_scheme'])
 
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    # os.makedirs(os.path.dirname(file_path), exist_ok=True)
     Image.fromarray(img).save(
         file_path,
         format=image_format,
